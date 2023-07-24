@@ -1,17 +1,18 @@
 import { Component } from "react";
+import { NoteCard } from "./NoteCard";
 
 export class NotesList extends Component {
-    render(){
-        return(
+    render() {
+        return (
             <ul>
-                <li>
-                    <section>
-                        <header>
-                            <h1>Título</h1>
-                        </header>
-                        <p>Escreva sua nota</p>
-                    </section>
-                </li>
+                {Array.of("Trabalho", "Trabalho", "Estudos").map((category, index) => {
+                    return (
+                        <li key={index}>
+                            <div>{category}</div>
+                            <NoteCard />
+                        </li>
+                    )
+                })}
             </ul>
         )
     }

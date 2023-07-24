@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import { Component } from "react";
+import { CreateNoteForm } from "./components/CreateNoteForm";
+import { NotesList } from "./components/NotesList";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+/* function App() seria mais moderno, não precisaria do render(){} e sim apenas do return()
+  mas foi deixado da forma abaixo, para padronizar com os outros componentes, da forma ensinada no tutorial */
+
+class App extends Component {
+  render() {
+    return (
+      <section>
+        <CreateNoteForm />
+        <NotesList />
+      </section>
+    );
+  }
 }
 
 export default App;
