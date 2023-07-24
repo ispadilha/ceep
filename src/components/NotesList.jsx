@@ -1,5 +1,5 @@
 import { Component } from "react";
-import { NoteCard } from "./NoteCard";
+import { NoteCard } from "./NoteCard/NoteCard";
 
 export class NotesList extends Component {
     render() {
