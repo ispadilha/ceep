@@ -1,4 +1,5 @@
-import { Component } from "react";
+import { Component } from "react"
+import "./style.css"
 
 export class CreateNoteForm extends Component {
   render() {
@@ -12,9 +13,11 @@ export class CreateNoteForm extends Component {
         <textarea
           placeholder="Escreva sua nota..."
           className="create-note-form-input"
+          // rows={15}
+          rows="15"
         />
         <button
-          className="create-note-form-submit-button"
+          className="create-note-form-input create-note-form-submit"
         >
           Criar Nota
         </button>
