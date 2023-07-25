@@ -1,2 +1,2 @@
-import { NoteCard } from "./NoteCard"
+import NoteCard from "./NoteCard"
 export default NoteCard

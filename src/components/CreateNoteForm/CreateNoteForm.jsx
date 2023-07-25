@@ -1,7 +1,7 @@
 import { Component } from "react"
 import "./style.css"
 
-export class CreateNoteForm extends Component {
+class CreateNoteForm extends Component {
   render() {
     return (
       <form>
@@ -25,3 +25,5 @@ export class CreateNoteForm extends Component {
     )
   }
 }
+
+export default CreateNoteForm

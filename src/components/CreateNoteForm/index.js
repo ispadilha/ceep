@@ -1,2 +1,2 @@
-import { CreateNodeForm } from "./CreateNoteForm"
+import CreateNodeForm from "./CreateNoteForm"
 export default CreateNodeForm

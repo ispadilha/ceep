@@ -1,8 +1,8 @@
 import { Component } from "react"
-import { NoteCard } from "../NoteCard"
+import NoteCard from "../NoteCard"
 import "./style.css"
 
-export class NotesList extends Component {
+class NotesList extends Component {
     render() {
         return (
             <ul className="notes-list">
@@ -18,3 +18,5 @@ export class NotesList extends Component {
         )
     }
 }
+
+export default NotesList

@@ -1,7 +1,7 @@
 import { Component } from "react"
 import "./style.css"
 
-export class NoteCard extends Component {
+class NoteCard extends Component {
     render() {
         return (
             <section className="note-card">
@@ -13,3 +13,5 @@ export class NoteCard extends Component {
         )
     }
 }
+
+export default NoteCard

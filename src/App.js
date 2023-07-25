@@ -1,6 +1,6 @@
 import { Component } from "react";
-import { CreateNoteForm } from "./components/CreateNoteForm/CreateNoteForm";
-import { NotesList } from "./components/NotesList/NotesList";
+import CreateNoteForm from "./components/CreateNoteForm";
+import NotesList from "./components/NotesList/";
 import "./assets/App.css"
 
 /* function App() seria mais moderno, não precisaria do render(){} e sim apenas do return()
