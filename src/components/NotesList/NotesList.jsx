@@ -1,5 +1,5 @@
 import { Component } from "react"
-import { NoteCard } from "../NoteCard/NoteCard"
+import { NoteCard } from "../NoteCard"
 import "./style.css"
 
 export class NotesList extends Component {
