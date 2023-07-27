@@ -7,11 +7,21 @@ import "./assets/App.css"
   mas foi deixado da forma abaixo, para padronizar com os outros componentes, da forma ensinada no tutorial */
 
 class App extends Component {
+  constructor(){
+    super()
+    this.notes = []
+  }
+
+  createNote(title, text){
+    const newNote = {title, text}
+    this.notes.push(newNote)
+  }
+
   render() {
     return (
       <section className="content">
-        <CreateNoteForm />
-        <NotesList />
+        <CreateNoteForm createNote={this.createNote.bind(this)}/>
+        <NotesList notes={this.notes} />
       </section>
     );
   }
