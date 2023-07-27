@@ -9,7 +9,7 @@ import "./assets/App.css"
 class App extends Component {
   render() {
     return (
-      <section>
+      <section className="content">
         <CreateNoteForm />
         <NotesList />
       </section>

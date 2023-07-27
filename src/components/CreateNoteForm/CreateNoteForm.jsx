@@ -4,7 +4,7 @@ import "./style.css"
 class CreateNoteForm extends Component {
   render() {
     return (
-      <form>
+      <form className="create-note-form">
         <input
           type="text"
           placeholder="Título"
