@@ -14,7 +14,7 @@ class NotesList extends Component {
                     return (
                         <li className="notes-list-item" key={index}>
                             {/* <div>{category}</div> */}
-                            <NoteCard />
+                            <NoteCard title={note.title} text={note.text}/>
                         </li>
                     )
                 })}
